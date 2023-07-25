@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./blogStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Blogs</title>
+</head>
+
+<body>
+    <div class="blog-container">
+        <div class="blog">
+            <div class="blog-header">
+                <div class="blog-title">
+                    <h1>Support Vector Machines (SVM): An Intuitive Explanation</h1>
+                </div>
+                <div class="blog-author" style="margin-top: 3rem; margin-bottom: 3rem">
+                    <div class="auth-image">
+                        <img src="./asset 0.png" alt="Tasmay Pankaj Tibrewal image" />
+                    </div>
+                    <div class="auth-details">
+                        <span>Tasmay Pankaj Tibrewal</span>
+                        <span>24 July, 2023</span>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-bottom: 2rem;">
+                Support Vector Machines (SVMs) are a type of supervised machine
+                learning algorithm used for classification and regression tasks.
+                They are widely used in various fields, including pattern
+                recognition, image analysis, and natural language processing.
+            </p>
+            <img src="./blog1/asset 1.png" alt="" style="margin-bottom: 2rem;">
+            <p style="margin-bottom: 2rem;">SVMs work by finding the optimal hyperplane that separates data points into
+                different classes.</p>
+            <h2 style="margin-bottom: 1rem;">Hyperplane:</h2>
+            <p> A hyperplane is a decision boundary that separates data points into different classes in a
+                high-dimensional space. In two-dimensional space, a hyperplane is simply a line that separates the data
+                points into two classes. In three-dimensional space, a hyperplane is a plane that separates the data
+                points into two classes. Similarly, in N-dimensional space, a hyperplane has (N-1)-dimensions.</p>
+            <p class="gap1" style="margin-top:2rem; margin-bottom: 2rem;">It can be used to make predictions on new data
+                points by evaluating which side of the
+                hyperplane they fall on. Data points on one side of the hyperplane are classified as belonging to one
+                class, while data points on the other side of the hyperplane are classified as belonging to another
+                class.</p>
+            <img src="./blog1/asset 2.png" alt="">
+            <h2 style="margin-bottom: 1rem; margin-top: 2rem;">Margin:</h2>
+            <p style="margin-bottom: 2rem;">A margin is the distance between the decision boundary (hyperplane) and the
+                closest data points from each
+                class. The goal of SVMs is to maximize this margin while minimizing classification errors. A larger
+                margin indicates a greater degree of confidence in the classification, as it means that there is a
+                larger gap between the decision boundary and the closest data points from each class. The margin is a
+                measure of how well-separated the classes are in feature space. SVMs are designed to find the hyperplane
+                that maximizes this margin, which is why they are sometimes referred to as maximum-margin classifiers.
+            </p>
+            <img src="./blog1/asset 3.png" alt="" style="margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1rem;">Support Vectors:</h2>
+            <p style="margin-bottom: 2rem;">They are the data points that lie closest to the decision boundary
+                (hyperplane) in a Support Vector
+                Machine (SVM). These data points are important because they determine the position and orientation of
+                the hyperplane, and thus have a significant impact on the classification accuracy of the SVM. In fact,
+                SVMs are named after these support vectors because they “support” or define the decision boundary. The
+                support vectors are used to calculate the margin, which is the distance between the hyperplane and the
+                closest data points from each class. The goal of SVMs is to maximize this margin while minimizing
+                classification errors.</p>
+            <h2 style="margin-bottom: 2rem;">Understanding SVM with an example dataset</h2>
+            <img src="./blog1/asset 4.png" alt="" style="margin-bottom: 3rem;">
+            <p style="margin-bottom: 3rem;">We have a famous dataset called ‘Iris’. There are four features (columns or
+                independent variables) in this dataset but for simplicity purposes, we shall on look at two which are:
+                ‘Petal length’ and ‘Petal Width’. These points are then plotted on a 2D plane.</p>
+            <img src="./blog1/asset 5.png" alt="" style="margin-bottom: 3rem;">
+            <p style="margin-bottom: 2rem;">Lighter points represent the species ‘Iris Setosa’ and darker ones represent
+                ‘Iris versicolor’.</p>
+            <p style="margin-bottom: 2rem;">We can simply classify this by plotting lines, using linear classifiers.</p>
+            <p style="margin-bottom: 2rem;">The dark and light lines accurately classify the test data set but may fail
+                on new data due to the closeness of the boundary from the respective classes. Whereas, the dotted line
+                classifier is entirely trash and misclassified many points.</p>
+            <p style="margin-bottom: 2rem;">What we want is the best classifier. A classifier which stays farthest from
+                the overall class, that is where SVM comes in.</p>
+            <img src="./blog1/asset 6.png" alt="" style="margin-bottom: 3rem;">
+            <p style="margin-bottom: 2rem;">We can think of SVM as fitting the widest possible path (represented by
+                parallel dashed lines) between the classes.</p>
+            <p style="margin-bottom: 2rem;">This is termed “Large Margin Classification”.</p>
+            <p style="margin-bottom: 2rem;"><strong>Note:</strong> In theory, the hyperplane is exactly between the
+                support vectors. But here it is slightly closer to the dark class. Why? This will be discussed later in
+                the regularization part.</p>
+            <h2 style="margin-bottom: 2rem;">Understanding by an Analogy (You can skip if you understood :)</h2>
+            <p style="margin-bottom: 2rem;">You can think of SVM as a construction company. The 2D plane is a map and
+                the 2 classes are 2 cities. The data points are analogous to buildings. You are the government and your
+                goal is to create the best highway to minimise traffic which passes through both the cities, but you are
+                constrained by the area available to you.</p>
+            <p style="margin-bottom: 2rem;">We are considering the road to be “straight” for now. (We will explore
+                non-linear models later in the
+                article)</p>
+            <p style="margin-bottom: 2rem;">You give the contract to SVM construction company. What SVM does to minimise
+                traffic is it wants to
+                maximise the width of the road. It looks at the widest stretch of land between the 2 cities. The
+                buildings at the end of the road are called “Support Vectors” since they are constraining or
+                “Supporting” the model. The highway is angled such that there is equal space for the cities to expand
+                along it.</p>
+            <p style="margin-bottom: 2rem;">This central line dividing the highway represents the Decision Boundary
+                (Hyperplane) and the edges
+                represent Hyperplanes for the respective Classes. The width of this highway is the Margin.</p>
+            <h2 style="margin-bottom: 2rem;">What Happens if the data is not linearly classifiable?</h2>
+            <p style="margin-bottom: 2rem;">When a linear hyperplane is not possible, the input data is transformed into
+                a higher-dimensional feature
+                space, where it may be easier to find a linear decision boundary that separates the classes.</p>
+            <p style="margin-bottom: 2rem;">What do I mean by that 😕 ?</p>
+            <strong style="margin-bottom: 2rem;">Let’s look at an example:</strong><br><br>
+            <img src="./blog1/asset 7.png" alt="" style="margin-bottom: 2rem;">
+            <p style="margin-bottom: 2rem;">In the above figure, a 2-D hyperplane was not possible and hence
+                transformation was required (remember I told you the case if the highway wasn’t straight).</p>
+            <strong style="margin-bottom: 2rem;">What is transformation or addition of a new feature?</strong><br><br>
+            <p style="margin-bottom: 2rem;">We have two features X and Y, and the data which not linearly classifiable.
+                What we need to do is add another dimension in which if the data is plotted it becomes linearly
+                separable.</p>
+            <p style="margin-bottom: 2rem;">Values of a point in the dimensions are nothing but column values of the
+                point. To add another dimension we have to create another column (or feature).</p>
+            <p style="margin-bottom: 2rem;">Here we have two features X and Y, a third feature is needed which will be a
+                function of the original features i.e. X and Y, which will be enough to classify the data linearly in
+                three dimensions.</p>
+            <p style="margin-bottom: 2rem;">We take the third feature Z = f(x,y); f representing a function on X and Y.
+                Here the Radial Basis Function(RBF) (measuring Euclidean distance) from the origin is enough.</p>
+            <blockquote
+                style=" box-shadow: rgb(36, 36, 36) 3px 0px 0px 0px inset; padding-left: 23px; margin-bottom: 2rem;">
+                <p style="margin-bottom: 2rem;">Z = (X²+ Y²)^(1/2)</p>
+            </blockquote>
+            <img src="./blog1/asset 8.png" alt="" style="margin-bottom: 2rem;"><br><br>
+            <p>Here the hyperplane was as simple as creating a plane parallel to the X-Y plane at a certain height.</p>
+            <br><br>
+            <h2>Problems with this method:</h2><br><br>
+            <p>The main problem here is the heavy load of the calculations to be performed.
+                <br><br>
+
+                Here we took points centred on origin in a concentric manner. Suppose the points were not concentric but
+                could be separated by the RBF. So we would need to take each point in the dataset as a reference each
+                time and find the distance of all other points with respect to that point.
+                <br><br>
+                So we would need to calculate n*(n-1)/2 distances. (n-1 other points with respect to each n points, but
+                once the distance of 1–2 is calculated the distance of 2–1 does need to be calculated)
+                <br><br>
+            </p><br><br>
+            <h2>Time Complexity:</h2><br><br>
+            <p>The time complexity of a square root is O(log(n)) and for power, addition is O(1). Thus to do n*(n-1)/2
+                total calculations we would need O(n²log(n)) time complexity.</p><br><br>
+            <p>But as our goal is to separate the classes and not find the distance, we can do away with the square
+                root. (Z = X²+ Y²)</p><br><br>
+            <p>In that case, we would get a time complexity of O(n²).</p><br><br>
+            <h2>But this was not even the problem, the problem starts now</h2><br><br>
+            <p>Here we knew which function was to be used. But there could be many functions with just the degree
+                limited to 2 (X, Y, XY, X² and Y²).</p><br><br>
+            <p>We can use these 5 as 3 dimensions in ⁵C₃ ways = 10 ways. Not to mention, the infinite possibility of
+                their linear combinations (Z = 4X² + 7XY + 13Y², Z= 8XY +17X², and so on…).</p><br><br>
+            <p>And this was only for 2-degree polynomials. If we started using 3-degree polynomials then X³, Y³, X²Y,
+                XY² will also come in the picture.</p><br><br>
+            <p>Not all of these are good enough to be our additional feature.</p><br><br>
+            <br><br>
+            <em>For example, I started with (X vs Y vs XY as the features):</em>
+            <br><br>
+            <img src="./blog1/asset 9.png" alt="">
+            <br><br>
+            <p>All the calculations and computations that went into this plot were in vain.<br><br></p>
+            <p>Now we have to use another function as the feature and try again.<br><br></p>
+            <em>Say, I use (X²+vs Y² vs XY as the features, yes I replaced X and Y):
+                <br><br>
+            </em>
+            <img src="./blog1/asset 10.png" alt="">
+            <p>I saw that earlier data and noticed that it wasn't linearly separable since yellow was in between the red
+                points.
+                <br><br>
+                Since the two yellow beaks met at the centre and one of them was going in the negative X and negative Y
+                direction, I decided to square X and Y so that a new set of values begin from 0 forming only a single
+                separation region between the beak and the bird’s face as compared to two earlier.
+                <br><br>
+                This plot is linearly separable, in this way, we can reuse the XY calculations and plot smartly to get
+                the desired features to separate the data.
+                <br><br>
+                But even this has limitations, such as using only one or two feature datasets so we get a plot in 3-d
+                and not more dimensions, also our brain's capacity to look for patterns to identify the next set of
+                features and what if the first plot had no pattern so we had to again take a guess for a feature and
+                start from scratch.
+                <br><br>
+                If we got the desired feature set in only two steps as we got above, even then this method is slower
+                than the one we actually use.
+                <br><br>
+                What we use is called the <strong>Kernel Trick</strong>.
+                <br><br>
+            </p>
+            <h2>The Kernel Trick</h2><br><br>
+            <p>A Kernel Trick instead of adding another dimension/feature, finds the similarity of the points.
+                <br><br>
+                Instead of finding f(x,y) directly, it computes the similarity of the image of these points. In other
+                words, instead of finding f(x1,y1) and f(x2,y2) we take the points (x1,y1) and (x2,y2) and compute how
+                similar would their outputs be using a function f(x,y); where f can be any function on x,y.
+                <br><br>
+                Thus we don’t need to find a suitable set of features here. We find similarity in such a way that it is
+                valid for all sets of features.
+                <br><br>
+                To calculate the similarity we use the Gaussian function.
+                <br><br>
+            </p>
+            <blockquote
+                style=" box-shadow: rgb(36, 36, 36) 3px 0px 0px 0px inset; padding-left: 23px; margin-bottom: 2rem;">
+                <p style="margin-bottom: 2rem;"><em>f(x) = ae^(-(x-b)²/2c²)</em>
+                    <br><br>
+                    a : represents the height of the peak of the curve
+                    <br><br>
+                    b : represents the position of the centre of the peak
+                    <br><br>
+                    c : is the standard deviation of the data
+                    <br><br>
+                </p>
+            </blockquote>
+            <p>For RBF Kernel we use:</p><br><br>
+            <blockquote
+                style=" box-shadow: rgb(36, 36, 36) 3px 0px 0px 0px inset; padding-left: 23px; margin-bottom: 2rem;">
+                <p style="margin-bottom: 2rem;"><em> K(X,X’) = e^-γ(|X-X’|²) = (1/ e^|X-X’|²) γ</em>
+                    <br><br>
+                    γ : is a hyperparameter which represents the linearlity of the model (γ ∝ 1/c²)
+                    <br><br>
+                    X,X’ :represents the position vectors of the two points
+                    <br><br>
+                </p>
+            </blockquote>
+            <p>A small γ (tending to 0) means a more linear model and a large γ means a more non-linear model.
+                <br><br>
+                Here we have 2 models (left with γ = 1 and right with γ = 0.01, much more linear in nature).
+                <br><br>
+            </p>
+            <div>
+                <img src="./blog1/asset 11.png" alt="">
+            </div>
+            <strong>So why not let gamma be a very high value? What is the use of a low γ?</strong><br><br>
+            <p>Large values of gamma may lead to overfitting as well and thus we need to find appropriate gamma values.
+                <br><br>
+                Figure with 3 models, from left γ = 0.1, γ = 10, γ = 100. (The left one is accurately fitted, the middle
+                is overfitted and the right one is extremely overfitted)
+            </p>
+            <br><br>
+            <img src="./blog1/asset 12.png" alt=""><br><br>
+            <h2>Time Complexity :</h2><br><br>
+            <p>Since we need to find the similarity of each point with respect to all other points we need a total of
+                n*(n-1)/2 calculations.
+                <br><br>
+                Exponent has a time complexity of O(1) and thus we get a total time complexity of O(n²).
+                <br><br>
+                We do not need to plot points, check feature sets, take combinations, etc. This makes this method way
+                more efficient.
+                <br><br>
+                What we do have here is the usage of different Kernels for this.
+                <br><br>
+            </p>
+            <strong>We have Kernels such as:</strong><br><br>
+            <blockquote
+                style=" box-shadow: rgb(36, 36, 36) 3px 0px 0px 0px inset; padding-left: 23px; margin-bottom: 2rem;">
+                <p style="margin-bottom: 2rem;"><em> Polynomial Kernel
+                        <br><br>
+                        Gaussian Kernel
+                        <br><br>
+                        Gaussian RBF Kernel
+                        <br><br>
+                        Laplace RBF Kernel
+                        <br><br>
+                        Hyperbolic Tangent Kernel
+                        <br><br>
+                        Sigmoid Kernel
+                        <br><br>
+                        Bessel function of first kind Kernel
+                        <br><br>
+                        ANOVA radial basis Kernel
+                        <br><br>
+                        Linear Splines Kernel
+                        <br><br>
+                    </em>
+                </p>
+            </blockquote>
+            <p>Whichever one we use, we get results in lesser computations than the original method.
+                <br><br>
+                To further optimise our calculations we use the “Gram Matrix”.
+                <br><br>
+                The Gram Matrix is a matrix which can be easily stored and manipulated in the memory and is highly
+                efficient to use.
+            </p>
+            <br><br>
+            <h2>Regularization and Soft Margin SVM:</h2><br>
+            <p>Finally, Onto a new topic 😮‍💨(phew).</p><br><br>
+            <p>If we strictly impose that all points must be off the street on the correct side then this is called Hard
+                Margin Classification (remember the first SVM model figure that I showed).
+                <br><br>
+                There are two issues with this method. First, it would only work with linearly separable data and not
+                for non-linearly separable data (which may be linearly classifiable for the most part).
+                <br><br>
+                Second, is its sensitivity to outliers. In the figure below the Red Point is introduced as an outlier in
+                the left class and it significantly changes the decision boundary, this may result in misclassifications
+                of non-outlier data of the second class while testing the model.
+            </p>
+            <br><br>
+            <img src="./blog1/asset 13.png" alt=""><br><br>
+            <p>Although this model has not misclassified any of the points it is not a very good model and will give
+                higher errors during testing.
+                <br><br>
+                To avoid this, we use <strong>Soft Margin Classification.</strong>
+                <br><br>
+                A <strong>soft margin</strong> is a type of margin that allows for some misclassification errors in the
+                training data.
+                <br><br>
+            </p>
+            <img src="./blog1/asset 14.png" alt=""><br><br>
+            <p>Here, a soft margin allows for some misclassification errors by allowing some data points to be on the
+                wrong side of the decision boundary.
+                <br><br>
+                Even though there is a misclassification in the training data set and worse performance with respect to
+                the previous model, the general performance would be much better during testing, as a result of how far
+                it is from both classes.
+                <br><br>
+                But we can solve the problem of outliers by <strong>removing</strong> them using data preprocessing and
+                data cleaning right? Then why Soft Margins?
+                <br><br>
+                They are used <strong>mainly</strong> when the data is not linearly separable, meaning that it is not
+                possible to find a hyperplane that perfectly separates the classes without any errors and to avoid
+                outliers (<strong><em>Hard Margin Classification</em></strong> is not possible). Example :
+                <br><br>
+            </p>
+            <div
+                style="display: flex; flex-direction:column; font-size: 15px; color:rgb(136, 135, 135); font-weight:600">
+                <img src="./blog1/asset 15.png" alt="">
+                <p>“Iris” dataset (Right Class is Iris Virginica, Left Class is Iris Versicolor), is non-linearly
+                    separable but when Soft Margin Classification is used, we get a model with minimum
+                    misclassification. (0 minor misclassifications with respect to hyperplanes of respective classes) [5
+                    major misclassifications, wrong side of decision boundary] (Value of C = 100)</p>
+            </div>
+            <br><br>
+            <h2>How are Soft Margins working?</h2><br><br>
+            <p>Soft margins are implemented by introducing a slack variable for each data point, which allows the SVM to
+                tolerate some degree of misclassification error. The amount of tolerance is controlled by a parameter
+                called the regularization hyperparameter C, which determines how much weight should be given to
+                minimizing classification errors versus maximizing the margin.
+                <br><br>
+                It controls how much tolerance is allowed for misclassification errors, with larger values of C leading
+                to a harder margin (less tolerance for errors) and smaller values of C leading to a softer margin (more
+                tolerance for errors).
+                <br><br>
+                Basically through our analogy, instead of creating a very small road (for the outlier case) when it was
+                not possible to create a large road through the middle of the two cities we create a larger road by
+                moving out some people.
+                <br><br>
+                It may be bad for the people moving out (the outlier getting misclassified) but overall the highway (our
+                model) would be way larger (more accurate) and better.
+                <br><br>
+                In the case above where no road could be created, we ask some people to move out and create a narrow
+                road. A wider road though better for transport would cause problems for a large number of people (many
+                points getting misclassified).
+                <br><br>
+                The regularization hyperparameter ‘C’ controls how many people can be moved out (how many points can be
+                misclassified or tolerance) for the construction of the project.
+                <br><br>
+                A high value of C means the model is harder in nature (less tolerant to misclassifications). Whereas a
+                low value of C means that the model is softer in nature (more tolerant to misclassifications).
+            </p>
+            <br><br>
+            <div
+                style="display: flex; flex-direction:column; font-size: 15px; color:rgb(136, 135, 135); font-weight:600">
+                <img src="./blog1/asset 16.png" alt="">
+                <p>Same Model with the value of C = 1 (12 minor misclassifications with respect to hyperplane of the
+                    classes) [4 major misclassifications, wrong side of decision boundary]</p>
+            </div>
+            <p>A lower C value for the previous model (1 with respect to 100) tolerates more misclassifications,
+                allowing more people to move out and thus building a wider street).
+                <br><br>
+                <strong>Note:</strong> <em>Lower value of C does not necessarily mean more major misclassifications
+                    always, sometimes it may
+                    mean way more minor classifications.</em>
+                <br><br>
+                In this case and for most general cases, low values of C tend to give trash models misclassifying
+                multiple points and reducing accuracy.
+                <br><br>
+                <strong>Note:</strong> <em>A low C is not simply just widening the original path until the required
+                    tolerance level is met.
+                    It means creating a new widest path by misclassifying the maximum number of points such that it is
+                    below
+                    the tolerance threshold.</em>
+                <br><br>
+                C controls the Bias/Variance trade-off. A low bias means that the model has low or no assumptions about
+                the data. A high variance means that the model will change depending on what we take as training data.
+                <br><br>
+                For Hard Margin Classification, the model changes significantly on changing data (if new points were
+                introduced between the hyperplanes) so it has high variance, but it has no assumption about the data
+                there is low bias.
+                <br><br>
+                Soft Margin Classification models have negligible changes <em>(due to tolerance to misclassify
+                    data)</em> thus
+                they have a low variance. But it assumes we can misclassify some information and assumed that the
+                particular model with a wider margin would lead to better results and thus have a high bias.
+                <br><br>
+                <strong>Why use low value of C then? Why an appropriate value needs to be chosen</strong>
+                <br><br>
+                This is a phenomenon similar to overfitting and underfitting which happens with very high values of C
+                and very low values of C.
+                <br><br>
+                Very low values will give very poor results as seen <em>(similar to the case of underfitting).</em>
+                <br><br>
+            </p>
+            <img src="./blog1/asset 17.png" alt="">
+            <p>Model with C = 1000, is unsuitable as it is too close to the left class at the bottom and too close to
+                the right class at the top, with chances of misclassifying data (here there is only 1 major
+                misclassification and 1 minor misclassification hence, during training the model is good, but the model
+                is not good for general decision making and may perform poorly during testing).
+                <br><br>
+                Thus models with a very high value of C may also give poor results on testing (similar to the case of
+                overfitting).
+                <br><br>
+            </p>
+            <img src="./blog1/asset 18.png" alt=""><br><br>
+            <p>Model with C = 1, suitable and better-generalised model. (Though there are 3 major misclassifications and
+                about 12 minor misclassifications and thus a worse performance on training data but the model keeps in
+                mind the bulk of the data and creates decision boundaries according to that, hence it has better
+                performance during testing owing to its distance from both the classes).
+                <br><br>
+                Note: Minor misclassification is a term which I use to describe data not correctly classified by the
+                class’ hyperplane. They do not lead to worse performance directly but give an indicator that the model
+                may be worse. Hence in the above case despite 15 misclassifications performance is not 7.5 times worse,
+                but only 3 times worse on training data due to 3 times more major misclassifications.
+                <br><br>
+                Remember I said initially about how in theory the decision boundary shall be in between the support
+                vectors, but it was slightly closer to the darker class. That, was due to regularization. It created a
+                model with 2 minor misclassifications such that the overall model is a more accurate one.
+            </p>
+            <br><br>
+            <p>And thus the model should have been represented like this:</p><br><br>
+            <img src="./blog1/asset 19.png" alt=""><br><br>
+            <p style="display: flex; flex-direction:column; font-size: 15px; color:rgb(136, 135, 135); font-weight:600">
+                Corrected version of the first model, with 2 minor misclassifications (Decision Boundary is now
+                equidistant from the support vectors)
+                <br><br>
+            </p>
+            <h2>Regression using SVM</h2>
+            <br><br>
+            <p>SVMs, although generally used for classification can be used for both regression and classification.
+                Support Vector Regression (SVR) is a machine learning algorithm used for regression analysis. It is
+                different from traditional linear regression methods as it finds a hyperplane that best fits the data
+                points in a continuous space, instead of fitting a line to the data points.
+                <br><br>
+                SVR in contrast to SVM tries to maximise the number of points in the street (margin), the width is
+                controlled by a hyperparameter ε (epsilon).
+                <br><br>
+            </p>
+            <img src="./blog1/asset 20.png" alt="">
+            <p>An analogy of this could be passing a flyover or a bridge over buildings or houses where we want to give
+                shade to the most number of houses keeping the bridge thinnest.
+
+                SVR wants to include the whole data into its reach while trying to minimise the margin, basically trying
+                to encompass the points. Whereas linear regression wants to pass a line such that the sum of distances
+                of the points from the line is minimum.</p>
+            <h2>The advantages of SVR over normal regression are:
+
+            </h2><br><br>
+            <p> <strong>1)Non-linearity:</strong> SVR can capture non-linear relationships between input features and
+                the target variable. It achieves this by using the kernel trick. In contrast, Linear Regression assumes
+                a linear relationship between the input features and the target variable and Non-Linear Regression would
+                require a lot of computation.
+                <br><br>
+                <strong>2)Robustness to outliers:</strong> SVR is more robust to outliers compared to Linear Regression.
+                SVR aims to minimize the errors within a certain margin around the predicted values, known as the
+                epsilon-insensitive zone. This characteristic makes SVR less influenced by outliers that fall outside
+                the margin, leading to more stable predictions.
+                <br><br>
+                <strong>3)Sparsity of support vectors: </strong>SVR typically relies on a subset of training instances
+                called support vectors to construct the regression model. These support vectors have the most
+                significant impact on the model and represent the critical data points for determining the decision
+                boundary. This sparsity property allows SVR to be more memory-efficient and computationally faster than
+                Linear Regression, especially for large datasets. Also, an advantage is that after the addition of new
+                training points the model does not change if they lie in the margin.
+                <br><br>
+                <strong>4)Control over model complexity:</strong> SVR provides control over model complexity through
+                hyperparameters such as the regularization parameter C and the kernel parameters. By adjusting these
+                parameters, you can control the trade-off between model complexity and generalization ability this level
+                of flexibility is not offered by linear regression.
+                <br><br>
+            </p>
+            <h2>Applications and Uses of SVM:</h2><br><br>
+            <p>Support Vector Machines (SVMs) have been successfully applied to various real-world problems across
+                different domains. Here are some notable applications of SVMs:
+                <br><br>
+                <strong>1. Image Classification:</strong> SVMs have been widely used for image object recognition,
+                handwritten digit
+                recognition and optical character recognition (OCR). They have been employed in systems like filtering
+                image-based spam and face detection systems used for security, surveillance, and biometric
+                identification.
+                <br><br>
+                <strong>2. Text Classification:</strong> SVMs are effective for text categorization tasks, such as
+                sentiment analysis,
+                spam detection, and topic classification.
+                <br><br>
+                <strong>3. Bioinformatics:</strong> SVMs have been applied in bioinformatics for tasks such as protein
+                structure
+                prediction, gene expression analysis, and DNA classification.
+                <br><br>
+                <strong>4. Financial Forecasting:</strong> SVMs have been used in financial applications for tasks such
+                as stock market
+                prediction, credit scoring, and fraud detection.
+                <br><br>
+                <strong>5. Medical Diagnosis:</strong> SVMs have been utilized in medical diagnosis and decision-making
+                systems. They can
+                assist in diagnosing diseases, predicting patient outcomes, or identifying abnormal patterns in medical
+                images.
+                <br><br>
+                SVMs have also been applied in other domains such as geosciences, marketing, computer vision, and more,
+                showcasing their versatility and effectiveness in various problem domains.
+                <br><br>
+            </p>
+
+        </div>
+    </div>
+    <script src="./blogScript.js"></script>
+</body>
+
+</html>

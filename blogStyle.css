@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.blog-container{
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog{
+    width: 40%;
+}
+.blog-header{
+    display: flex;
+    flex-direction: column;
+}
+.blog-author{
+   
+    display: flex;
+    gap: 50px;
+}
+.blog-author img{
+    border-radius: 50%;
+}
+.auth-image img{
+    width: 60px;
+}
+.auth-details{
+    display: flex;
+    flex-direction: column;
+}
+/* =================================== */
+.pic-container{
+    display: flex;
+    grid-template-rows: 2;
+    width: 100%;
+    flex-direction: column;
+}
+.container-1{
+    width: 100%;
+    height: 43vh;
+    overflow: hidden;
+    background-image: url(./naman-1.jpeg);
+    background-position: 72% 66%;
+}
+
+.container-2{
+    width: 100%;
+    display: flex;
+}
+.container-2 img{
+    width: 100.34%;
+}
+@media(max-width: 1400px){
+    .blog{
+        margin-left: 200px;
+        margin-right: 200px;
+        width: 60%;
+        font-size: 1.3rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    img{
+        width: 100%;
+    }
+
+    blog-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-author img{
+        border-radius: 50%;
+    }
+    .auth-image img{
+        width: 40px;
+    }
+    .auth-details{
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+}
+@media(max-width: 992px){
+    .blog{
+        margin-left: 150px;
+        margin-right: 150px;
+        width: 60%;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    img{
+        width: 100%;
+    }
+
+    blog-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-author img{
+        border-radius: 50%;
+    }
+    .auth-image img{
+        width: 40px;
+    }
+    .auth-details{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+}
+@media(max-width: 768px){
+    .blog{
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 60%;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .blog{
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 60%;
+        font-size: 0.9rem;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+    .auth-image img{
+        width: 35px;
+    }
+    .auth-details{
+        display: flex;
+        flex-direction: column;
+        font-size: 0.68rem;
+    }
+}
