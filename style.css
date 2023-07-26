@@ -713,7 +713,7 @@ hr {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 130vh;
+  height: 150vh;
 }
 .prog-1 {
   width: 60%;
@@ -767,6 +767,7 @@ hr {
   left: 56%;
   top: 10%;
   overflow-y: scroll;
+  margin-bottom: 3rem;
 }
 .footer-main {
   padding-top: 90px;
