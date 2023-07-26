@@ -22,8 +22,8 @@ li {
 }
 a {
   text-decoration: none;
-  color: #333;
-  font-size: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
   transition: color 0.5s;
   font-weight: 600;
 }
@@ -41,15 +41,14 @@ a:hover {
   height: 3.75rem;
   margin: 0 auto;
   max-width: 75rem;
-  background-color: #eee;
+  background-color: #27303b;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: 999;
   transition: top 0.3s ease-in-out;
 }
 .fa-solid {
-  color: #176b87;
-  
+  color: #fff;
 }
 .fa-solid, .fas {
   font-weight: 900;
@@ -67,6 +66,7 @@ a:hover {
   scale: 1.7;
   position: relative;
   left: 37%;
+  top: -14%;
 }
 .bytlife-logo {
   width: 25%;
@@ -176,12 +176,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  background-color: #84a59d;
+  background-color: #84a59d;;
   border-radius: 50%;
   height: 80px;
   width: 80px;
   transform: 1.25s;
   transition-delay: calc(1s * var(--i));
+  
   transition: height 0.5s ease, width 0.5s ease;
 }
 .menu.active2 li {
@@ -194,6 +195,7 @@ a:hover {
   width: 177px;
   transition-delay: calc(1s * var(--i));
   transition: height 0.5s ease, width 0.5s ease;
+  box-shadow: 3px 2px 6px 0px #353535;
 }
 .toggle {
   position: fixed;
@@ -239,7 +241,7 @@ a:hover {
 
 /* =============================================================== */
 .slogan {
-  color: #84a59d;
+  color: #2B3B37;
   position: absolute;
   top: 20%;
   right: 11%;
@@ -249,16 +251,18 @@ a:hover {
   font-family: 'Fira Sans', sans-serif;
 }
 .slogan-1 {
-  color: crimson;
+  color: #700A1F;
   font-family: 'Fira Sans', sans-serif;
 }
 .slogan-2 {
-  color: crimson;
+  color: #700A1F;
   font-family: 'Fira Sans', sans-serif;
 }
 .change {
+  font-family: 'Fira Sans', sans-serif;
   font-size: 4rem;
-  color: #f5cac3;
+  color: #691D12;
+
   transition: opacity 0.3s, transform 0.3s;
 }
 .slogan-down{
@@ -282,7 +286,7 @@ a:hover {
   list-style: none;
   width: 100px;
   font-size: 4em;
-  color: #84a59d;
+  color: #2B3B37;
   transition: transform 0.5s;
 }
 
@@ -417,6 +421,7 @@ a:hover {
 }
 .poem-a-day {
   font-family: 'Gravitas One', cursive;
+  
   font-size: 1.3rem;
   align-items: center;
   display: flex;
@@ -428,6 +433,7 @@ a:hover {
   top: 32%;
   left: 37%;
   z-index: 2;
+  box-shadow: 3px 2px 6px 0px #353535;
 }
 .poem-content {
   font-family: 'Dancing Script', cursive; 
@@ -438,7 +444,7 @@ a:hover {
   border-radius: 20px;
   background-color: #e9ecef;
   width: 50%;
-  height: 80%;
+  height: 75%;
   position: absolute;
   top: 20%;
   left: 40%;
@@ -658,7 +664,7 @@ hr {
   align-items: center;
   width: 100%;
   height: 100vh;
-  color: #727a79;
+  color: #2B3B37;
 }
 .header {
   display: flex;
@@ -674,10 +680,11 @@ hr {
 .header span div {
   width: 50px;
   height: 50px;
-  background-color: #bd2d2d;
+  background-color: #691D12;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #f7ede2;
 }
 .questionair {
   display: flex;
@@ -710,6 +717,8 @@ hr {
   height: 50px !important;
   left: 42%;
   position: relative;
+  color: #f7ede2;
+
 }
 .question-1 span {
   grid-column: 2;
@@ -723,12 +732,14 @@ hr {
   align-items: center;
   width: 100%;
   height: 150vh;
+  
 }
 .prog-1 {
   width: 60%;
   height: 68vh;
   background-color: white;
   border-radius: 20px;
+  box-shadow: -2px -3px 9px -2px #353535;
 }
 .questions-prog {
   font-size: 1rem;
@@ -1158,7 +1169,7 @@ hr {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-size: 0.8rem;
   transition: color 0.5s;
   font-weight: 600;
@@ -1206,9 +1217,11 @@ a {
   align-items: center;
   justify-content: space-around;
   border-radius: 20px;
+  box-shadow: 3px 2px 6px 0px #353535;
 }
 .market-card-body a {
   font-size: 1rem;
+  color: #27303b;
 }
 .market-card-body {
   font-size: 1rem;
@@ -1742,7 +1755,7 @@ a {
       font-size: 2rem;
     }
     .change {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
     .socials {
       bottom: 20%;
