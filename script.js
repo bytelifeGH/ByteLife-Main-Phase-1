@@ -76,8 +76,8 @@ setInterval(() => {
     const nextName = featureName(features, i);
     changingName.textContent = nextName;
     i++;
-  }, 800);
-}, 1500);
+  }, 1000);
+}, 1700);
 
 for (let i = 0; i < circularNav.length; i++) {
   const circle = circularNav[i];
