@@ -8,8 +8,8 @@
   src: url("./assets/mouldy.ttf") format("truetype");
 }
 body {
-  background-color: black;
-  font-family: "Roboto", sans-serif;
+  background-color: #f7ede2;
+  font-family: 'Fira Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -107,6 +107,7 @@ a:hover {
   color: #fff;
 }
 .dropdown-menu {
+  font-family: 'Fira Sans', sans-serif;
   display: none;
   position: fixed;
   right: 2rem;
@@ -175,7 +176,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  background-color: #fff;
+  background-color: #84a59d;
   border-radius: 50%;
   height: 80px;
   width: 80px;
@@ -200,7 +201,7 @@ a:hover {
   bottom: 50%;
   translate: -60px 60px;
   translate: -60px 60px;
-  background-color: #fff;
+  background-color: #ff9f1c;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -238,26 +239,31 @@ a:hover {
 
 /* =============================================================== */
 .slogan {
-  color: #eeeeee;
+  color: #84a59d;
   position: absolute;
   top: 20%;
   right: 11%;
 }
 .slogan-start {
   font-size: 4rem;
+  font-family: 'Fira Sans', sans-serif;
 }
 .slogan-1 {
   color: crimson;
+  font-family: 'Fira Sans', sans-serif;
 }
 .slogan-2 {
   color: crimson;
+  font-family: 'Fira Sans', sans-serif;
 }
 .change {
   font-size: 4rem;
-  color: #eeeeee;
+  color: #f5cac3;
   transition: opacity 0.3s, transform 0.3s;
 }
-
+.slogan-down{
+  font-family: 'Fira Sans', sans-serif;
+}
 .changingName-hidden {
   opacity: 0;
   transform: translateY(20px);
@@ -276,12 +282,12 @@ a:hover {
   list-style: none;
   width: 100px;
   font-size: 4em;
-  color: #eeeeee;
+  color: #84a59d;
   transition: transform 0.5s;
 }
 
 .social:hover {
-  color: #fff;
+  color: #2ec4b6;
   filter: drop-shadow(0 0 20px #bd2d2d) drop-shadow(0 0 80px #bd2d2d);
   transform: translateY(-10px);
 }
@@ -293,7 +299,7 @@ a:hover {
 .latest-poem {
   width: 100%;
   height: 90vh;
-  background-color: #343434;
+  background-color: #f7ede2;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -303,13 +309,13 @@ a:hover {
   height: 67vh;
 }
 .poem-container {
-  background-color: #63a4ff;
-  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  background-color: #f6bd60;
+  background-image: linear-gradient(315deg, #f6bd60 0%, #f8e0b9 74%);
   width: 100%;
   height: 36vh;
 }
 .poem-slogan {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: italic;
   padding-top: 100px;
   padding-left: 27px;
@@ -319,7 +325,7 @@ a:hover {
 }
 /* ===============QUOTE============================ */
 .sloganFirst {
-  font-family: "Electra", Georgia, Times New Roman, serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 35px;
   quotes: "“" "”" "”" "’"; /* Set the custom quotation marks */
 }
@@ -337,7 +343,7 @@ a:hover {
   margin-left: 0.2em;
 }
 .sloganFirstAuthor {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-style: normal;
   font-size: 18px;
 }
@@ -388,7 +394,7 @@ a:hover {
 }
 
 .author-name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Gravitas One', cursive;
   display: flex;
   justify-content: center;
   color: #eeeeee;
@@ -410,12 +416,12 @@ a:hover {
   width: 314px;
 }
 .poem-a-day {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Gravitas One', cursive;
   font-size: 1.3rem;
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #63a4ff;
+  background-color: #f5f3f4;
   width: 150px;
   height: 63px;
   position: absolute;
@@ -424,23 +430,24 @@ a:hover {
   z-index: 2;
 }
 .poem-content {
-  font-family: "Electra", Georgia, Times New Roman, serif;
+  font-family: 'Dancing Script', cursive; 
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Adjusted to align content at the top */
   flex-direction: column;
   border-radius: 20px;
-  background-color: #eeeeee;
+  background-color: #e9ecef;
   width: 50%;
   height: 80%;
   position: absolute;
   top: 20%;
   left: 40%;
   overflow-y: auto; /* Added to enable scrolling when content exceeds height */
-  box-shadow: 2px 1px 20px 2px #63a4ff;
+  box-shadow: 2px 1px 20px 2px #19273a;
 }
 
 .poem-title {
+  font-family: 'Dancing Script', cursive;
   position: absolute;
   top: 15%;
   left: 20%;
@@ -449,6 +456,7 @@ a:hover {
 }
 
 .main-poem {
+  font-family: 'Dancing Script', cursive;
   font-size: 1.2rem;
   padding-left: 104px;
   padding-right: 100px;
@@ -650,7 +658,7 @@ hr {
   align-items: center;
   width: 100%;
   height: 100vh;
-  color: #fff;
+  color: #727a79;
 }
 .header {
   display: flex;
@@ -677,6 +685,7 @@ hr {
   width: 75%;
 }
 .question-header {
+  font-family: 'Fira Sans', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1334,7 +1343,7 @@ a {
     width: 250px;
   }
   .poem-a-day {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     align-items: center;
     display: flex;
@@ -1576,7 +1585,7 @@ a {
     }
 
     .author-name {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-family: 'Playfair Display', serif;
       display: flex;
       justify-content: end;
       color: #eeeeee;
@@ -1601,7 +1610,7 @@ a {
       display: none;
     }
     .poem-content {
-      font-family: "Electra", Georgia, Times New Roman, serif;
+      font-family: 'Dancing Script', sans-serif;  
       display: flex;
       justify-content: center;
       align-items: flex-start;
