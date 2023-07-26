@@ -309,10 +309,16 @@ a:hover {
   justify-self: center;
   align-items: center;
 }
+.latest-poem-ofall{
+  width: 100%;
+  height: 74vh;
+  background-color: #343434;
+}
 .container3-latest-poem {
   width: 85%;
   height: 67vh;
 }
+
 .poem-container {
   background-color: #f6bd60;
   background-image: linear-gradient(315deg, #f6bd60 0%, #f8e0b9 74%);
