@@ -1774,3 +1774,18 @@ a {
     }
   }
 }
+.circular-nav{
+  width: 36%;
+}
+.cir-blog{
+  transform: rotate(-45deg);
+}
+.cir-market{
+  transform: rotate(-90deg);
+}
+.cir-poem{
+  transform: rotate(-135deg);
+}
+.cir-ca{
+  transform: rotate(-180deg);
+}
