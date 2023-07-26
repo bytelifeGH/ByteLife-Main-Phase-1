@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .hide {
   display: none !important;
 }
@@ -48,7 +47,7 @@ a:hover {
   z-index: 999;
   transition: top 0.3s ease-in-out;
 }
-.fa-solid{
+.fa-solid {
   color: #176b87;
 }
 .action-btn-div {
@@ -56,7 +55,6 @@ a:hover {
 }
 .nav-logo {
   font-family: "MouldyCheese", sans-serif !important;
-
 }
 .bytlife-logo {
   width: 25%;
@@ -103,7 +101,7 @@ a:hover {
   height: 0;
   width: 300px;
   background: rgba(255, 255, 255, 1);
-  backdrop-filter : blur(15px);
+  backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -650,7 +648,7 @@ hr {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
   color: #fff;
 }
 .header {
@@ -709,14 +707,14 @@ hr {
   left: -44%;
 }
 /* ============================================= */
-.prog{
+.prog {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
 }
-.prog-1{
+.prog-1 {
   width: 60%;
   height: 50vh;
   background-color: white;
@@ -732,29 +730,29 @@ hr {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.red-dot{
+.red-dot {
   margin-left: 10px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #FF605C;
+  background-color: #ff605c;
   box-shadow: 0px 3px 6px 1px #343434;
 }
-.green-dot{
+.green-dot {
   width: 18px;
   height: 18px;
   border-radius: 50%;
   box-shadow: 0px 3px 6px 1px #343434;
-  background-color: #FFBD44;
+  background-color: #ffbd44;
 }
-.yellow-dot{
+.yellow-dot {
   width: 18px;
   height: 18px;
   border-radius: 50%;
   box-shadow: 0px 3px 6px 1px #343434;
-  background-color: #00CA4E;
+  background-color: #00ca4e;
 }
-.prog-2{
+.prog-2 {
   width: 35%;
   height: 30vh;
   background-color: #fff;
@@ -764,7 +762,7 @@ hr {
   left: 84%;
   top: 25%;
 }
-.footer-main{
+.footer-main {
   padding-top: 90px;
 }
 
@@ -782,7 +780,7 @@ hr {
   padding: 10px 0;
   margin-bottom: 30px;
 }
-.add-icon{
+.add-icon {
   float: left;
   width: 60px;
   display: inline-block;
@@ -796,13 +794,13 @@ hr {
   margin-right: 20px;
   text-align: center;
 }
-.add-icon img{
+.add-icon img {
   width: 100%;
 }
 .address-box .add-icon img {
   max-width: 40px;
 }
-.add-content{
+.add-content {
   padding-left: 70px;
 }
 .add-content h5 {
@@ -817,16 +815,16 @@ hr {
   color: #999999;
   font-weight: 300;
 }
-.add-content p a{
+.add-content p a {
   font-size: 14px;
   color: #999999;
   font-weight: 300;
   word-wrap: break-word;
 }
-.add-content p a:hover{
+.add-content p a:hover {
   color: #ffb32d;
 }
-.footer-main{
+.footer-main {
   padding-top: 90px;
 }
 
@@ -837,7 +835,7 @@ hr {
   padding: 10px 0;
   margin-bottom: 30px;
 }
-.add-icon{
+.add-icon {
   float: left;
   width: 60px;
   display: inline-block;
@@ -851,13 +849,13 @@ hr {
   margin-right: 20px;
   text-align: center;
 }
-.add-icon img{
+.add-icon img {
   width: 100%;
 }
 .address-box .add-icon img {
   max-width: 40px;
 }
-.add-content{
+.add-content {
   padding-left: 70px;
 }
 .add-content h5 {
@@ -872,13 +870,13 @@ hr {
   color: #999999;
   font-weight: 300;
 }
-.add-content p a{
+.add-content p a {
   font-size: 14px;
   color: #999999;
   font-weight: 300;
   word-wrap: break-word;
 }
-.add-content p a:hover{
+.add-content p a:hover {
   color: #ffb32d;
 }
 .col-lg-4 {
@@ -886,7 +884,7 @@ hr {
   width: 33.333%;
 }
 @media only screen and (max-width: 1400px) {
-  .navbar{
+  .navbar {
     width: 61%;
   }
   .slogan {
@@ -993,7 +991,6 @@ hr {
     top: 75%;
     left: 7%;
   }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1049,7 +1046,6 @@ hr {
 }
 
 @media only screen and (max-width: 992px) {
-
   .navbar {
     width: 60%;
   }
@@ -1137,11 +1133,15 @@ hr {
   .question-1 div {
     font-size: 1.4rem;
   }
-  .question-1 span{
+  .question-1 span {
     margin-left: 1rem;
     font-size: 1rem;
   }
   @media (max-width: 768px) {
+    .fixing {
+      position: relative;
+      right: 52%;
+    }
     .swiper {
       position: relative;
       width: 80%;
@@ -1292,6 +1292,9 @@ hr {
     }
   }
   @media only screen and (max-width: 576px) {
+    .container-questionair {
+      height: 115vh;
+    }
     .slogan {
       right: 27%;
       padding-left: 49px;
@@ -1300,7 +1303,7 @@ hr {
     .slogan-start {
       font-size: 2rem;
     }
-    .change{
+    .change {
       font-size: 2.4rem;
     }
     .socials {
@@ -1320,7 +1323,7 @@ hr {
     .header span {
       font-size: 1.4rem;
     }
-    .question-1 div{
+    .question-1 div {
       left: 25%;
     }
     .question-1 span {
@@ -1330,6 +1333,5 @@ hr {
     .add-content {
       padding-left: 10px;
     }
-
   }
 }
