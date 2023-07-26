@@ -17,13 +17,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
   <title>ByteLife</title>
 </head>
 
 <body>
   <div class="main-container"> <!--MAIN CONTAINER-->
-    <section class="container1">
+    <section id="home-page"  class="container1">
       <header>
         <!-- NAVBAR -->
         <div class="navbar">
@@ -32,16 +35,59 @@
             <li><a href="#home-page">Home</a></li>
             <li><a href="https://portfolio.bytelife.co.in/" target="_blank">About Us</a></li>
           </ul>
-          <a href="https://portfolio.bytelife.co.in/#contact" target="_blank" class="action-btn">Contact</a>
+
           <div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
         </div>
         <div class="dropdown-menu">
           <li><a href="#home-page">Home</a></li>
-          <li><a href="https://portfolio.bytelife.co.in/" target="_blank">About</a></li>
-          <a href="https://portfolio.bytelife.co.in/#contact" target="_blank" class="action-btn">Contact</a>
+          <li><a href="https://portfolio.bytelife.co.in/" target="_blank">About Us</a></li>
+
         </div>
       </header>
     </section>
+    <div class="sidebar">
+      <div class="logo-details">
+        <div class="logo_name">ByteLife</div>
+        <i class='bx bx-menu' id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#question">
+            <img class="quest" src="./questionair-icon.png" alt="">
+            <span class="links_name">Questionnaire</span>
+          </a>
+          <span class="tooltip">Questionnaire</span>
+        </li>
+        <li>
+          <a href="#blog-container">
+            <img src="./blog-icon.png" alt="">
+            <span class="links_name">Blogs</span>
+          </a>
+          <span class="tooltip">Blogs</span>
+        </li>
+        <li>
+          <a href="#market">
+            <img src="./marketplace-icon.png" alt="">
+            <span class="links_name">Marketplace</span>
+          </a>
+          <span class="tooltip">Marketplace</span>
+        </li>
+        <li>
+          <a href="#poem-section">
+            <img src="./poem-icon.png" alt="">
+            <span class="links_name">Poems</span>
+          </a>
+          <span class="tooltip">Poems</span>
+        </li>
+        <li>
+          <a href="#current-A">
+            <img src="./current-affairs.png" alt="">
+            <span class="links_name">Current-Affairs</span>
+          </a>
+          <span class="tooltip">Current Affairs</span>
+        </li>
+      </ul>
+    </div>
     <!-- CIRCULAR NAVBAR -->
     <div class="dummyMenu">
       <div class="menu">
@@ -63,7 +109,7 @@
         </li>
       </div>
       <!-- HOMEPAGE CONTENT -->
-      <div id="home-page" class="slogan-and-socials">
+      <div class="slogan-and-socials">
         <div class="slogan hide">
           <div class="slogan-up">
             <h1 class="slogan-start">
@@ -110,24 +156,21 @@
 
     </div>
     <!-- CURRENT AFFAIRS -->
-    <div class="container-questionair">
+    <div id="current-A" class="container-questionair">
       <div class="questionair">
         <div class="question-header">
           <div class="header"><span>WEEK <div> 1 </div> QUESTIONS</span> </div>
         </div>
         <div class="question-1">
-          <div>1</div> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, at</span>
+          <div>1</div> <span>US Cops Rescue 6 Starved Children, Including Two Locked Inside Dog Cage By Parents</span>
         </div>
 
         <div class="question-1">
-          <div>2</div> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, at</span>
+          <div>2</div> <span>"Mosque Might Fall...": In Gyanvapi Court Hearing, Muslim Side Flags Fears</span>
         </div>
 
         <div class="question-1">
-          <div>3</div> <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Eligendi, eaque eos corrupti accusamus corporis nam quas delectus ipsum
-            asperiores hic repellendus amet omnis sequi voluptatibus tempore eum facilis temporibus ab. Deleniti,
-            at</span>
+          <div>3</div> <span>Patient Goes For Consultation At Delhi Hospital, Attacks Doctor With Knife</span>
         </div>
       </div>
     </div>
@@ -171,7 +214,7 @@
       </div>
     </div>
     <!-- BLOGS -->
-    <div class="container7">
+    <div id="blog-container" class="container7">
 
       <div class="card">
         <div class="card__header">
@@ -583,7 +626,7 @@
     </div>
 
     <!-- MARKETPLACE -->
-    <div class="container7">
+    <div id="market" class="container7">
 
       <div class="card">
         <div class="card__header">
@@ -747,7 +790,7 @@
         </div>
       </div>
     </div>
-    <div class="prog">
+    <div id="question" class="prog">
       <div class="prog-1">
         <div class="blue-nav">
           <div class="red-dot"></div>
