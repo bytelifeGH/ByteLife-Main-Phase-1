@@ -49,18 +49,29 @@ a:hover {
 }
 .fa-solid {
   color: #176b87;
+  
+}
+.fa-solid, .fas {
+  font-weight: 900;
+  padding-right: 1rem;
 }
 .action-btn-div {
   padding-right: 1rem;
 }
 .nav-logo {
-  font-family: "MouldyCheese", sans-serif !important;
+  height: 3.75rem;
+}
+.nav-logo img {
+  height: 100%;
+  width: auto;
+  scale: 1.7;
+  position: relative;
+  left: 37%;
 }
 .bytlife-logo {
   width: 25%;
 }
 .navbar .nav-logo a {
-  font-size: 2rem;
   font-weight: 750;
   color: #176b87;
   padding-left: 1rem;
