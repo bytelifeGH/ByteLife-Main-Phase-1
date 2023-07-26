@@ -95,10 +95,3 @@ for (let i = 0; i < circularNav.length; i++) {
   }
 }
 // =================================================
-
-
-// window.addEventListener("click", () => {
-//   containerFloat.style.display = "none"; 
-// });
-// ==================================================
-

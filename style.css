@@ -883,7 +883,7 @@ hr {
 }
 .col-lg-4 {
   flex: 0 0 auto;
-  width: 16.333%;
+  width: 33.333%;
 }
 @media only screen and (max-width: 1400px) {
   .navbar{
@@ -1135,6 +1135,13 @@ hr {
     top: 30%;
     width: 97%;
   }
+  .question-1 div {
+    font-size: 1.4rem;
+  }
+  .question-1 span{
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
   @media (max-width: 768px) {
     .swiper {
       position: relative;
@@ -1271,6 +1278,22 @@ hr {
       transform: translateX(-55%);
     }
   }
-  @media only screen and (min-width: 576px) {
+  @media only screen and (max-width: 576px) {
+    .sloganFirstAuthor {
+      font-size: 14px;
+    }
+    .sloganFirst {
+      font-size: 1.5rem;
+    }
+    .header span {
+      font-size: 1.4rem;
+    }
+    .question-1 div{
+      left: 25%;
+    }
+    .question-1 span {
+      font-size: 0.9rem;
+      width: 100%;
+    }
   }
 }
