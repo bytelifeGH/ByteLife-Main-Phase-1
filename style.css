@@ -231,10 +231,10 @@ a:hover {
   color: #eeeeee;
   position: absolute;
   top: 20%;
-  right: 15%;
+  right: 11%;
 }
 .slogan-start {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .slogan-1 {
   color: crimson;
@@ -993,9 +993,7 @@ hr {
     top: 75%;
     left: 7%;
   }
-  .address-main{
-    display: none;
-  }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1051,6 +1049,7 @@ hr {
 }
 
 @media only screen and (max-width: 992px) {
+
   .navbar {
     width: 60%;
   }
@@ -1106,8 +1105,8 @@ hr {
   }
   .socials {
     bottom: 20%;
-    right: 58%;
-    padding-left: 17px;
+    right: 46%;
+    margin-left: 17px;
   }
   .social {
     font-size: 3em;
@@ -1243,7 +1242,21 @@ hr {
       transition: translate 0.5s;
     }
   }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 768px) {
+    .add-content {
+      padding-left: 30px;
+    }
+    .socials {
+      bottom: 20%;
+      right: 27%;
+      margin-left: 17px;
+    }
+    .sloganFirst {
+      font-size: 1.3rem;
+    }
+    .sloganFirstAuthor {
+      font-size: 14px;
+    }
     .swiper-slide:first-child {
       transition: transform 100ms;
     }
@@ -1279,6 +1292,25 @@ hr {
     }
   }
   @media only screen and (max-width: 576px) {
+    .slogan {
+      right: 27%;
+      padding-left: 49px;
+      width: 72%;
+    }
+    .slogan-start {
+      font-size: 2rem;
+    }
+    .change{
+      font-size: 2.4rem;
+    }
+    .socials {
+      bottom: 20%;
+      right: -3%;
+      margin-left: 17px;
+    }
+    .social {
+      font-size: 40px;
+    }
     .sloganFirstAuthor {
       font-size: 14px;
     }
@@ -1295,5 +1327,9 @@ hr {
       font-size: 0.9rem;
       width: 100%;
     }
+    .add-content {
+      padding-left: 10px;
+    }
+
   }
 }
