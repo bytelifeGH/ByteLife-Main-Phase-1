@@ -9,7 +9,7 @@
 }
 body {
   background-color: #f7ede2;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   overflow-x: hidden;
 }
 
@@ -50,7 +50,8 @@ a:hover {
 .fa-solid {
   color: #fff;
 }
-.fa-solid, .fas {
+.fa-solid,
+.fas {
   font-weight: 900;
   padding-right: 1rem;
 }
@@ -107,7 +108,7 @@ a:hover {
   color: #fff;
 }
 .dropdown-menu {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   display: none;
   position: fixed;
   right: 2rem;
@@ -176,13 +177,13 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  background-color: #84a59d;;
+  background-color: #84a59d;
   border-radius: 50%;
   height: 80px;
   width: 80px;
   transform: 1.25s;
   transition-delay: calc(1s * var(--i));
-  
+
   transition: height 0.5s ease, width 0.5s ease;
 }
 .menu.active2 li {
@@ -241,32 +242,32 @@ a:hover {
 
 /* =============================================================== */
 .slogan {
-  color: #2B3B37;
+  color: #2b3b37;
   position: absolute;
   top: 20%;
   right: 11%;
 }
 .slogan-start {
   font-size: 4rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 .slogan-1 {
-  color: #700A1F;
-  font-family: 'Fira Sans', sans-serif;
+  color: #700a1f;
+  font-family: "Fira Sans", sans-serif;
 }
 .slogan-2 {
-  color: #700A1F;
-  font-family: 'Fira Sans', sans-serif;
+  color: #700a1f;
+  font-family: "Fira Sans", sans-serif;
 }
 .change {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 4rem;
-  color: #691D12;
+  color: #691d12;
 
   transition: opacity 0.3s, transform 0.3s;
 }
-.slogan-down{
-  font-family: 'Fira Sans', sans-serif;
+.slogan-down {
+  font-family: "Fira Sans", sans-serif;
 }
 .changingName-hidden {
   opacity: 0;
@@ -286,7 +287,7 @@ a:hover {
   list-style: none;
   width: 100px;
   font-size: 4em;
-  color: #2B3B37;
+  color: #2b3b37;
   transition: transform 0.5s;
 }
 
@@ -319,7 +320,7 @@ a:hover {
   height: 36vh;
 }
 .poem-slogan {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: italic;
   padding-top: 100px;
   padding-left: 27px;
@@ -329,7 +330,7 @@ a:hover {
 }
 /* ===============QUOTE============================ */
 .sloganFirst {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 35px;
   quotes: "“" "”" "”" "’"; /* Set the custom quotation marks */
 }
@@ -347,7 +348,7 @@ a:hover {
   margin-left: 0.2em;
 }
 .sloganFirstAuthor {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
 }
@@ -398,7 +399,7 @@ a:hover {
 }
 
 .author-name {
-  font-family: 'Gravitas One', cursive;
+  font-family: "Gravitas One", cursive;
   display: flex;
   justify-content: center;
   color: #eeeeee;
@@ -420,8 +421,8 @@ a:hover {
   width: 314px;
 }
 .poem-a-day {
-  font-family: 'Gravitas One', cursive;
-  
+  font-family: "Gravitas One", cursive;
+
   font-size: 1.3rem;
   align-items: center;
   display: flex;
@@ -436,7 +437,7 @@ a:hover {
   box-shadow: 3px 2px 6px 0px #353535;
 }
 .poem-content {
-  font-family: 'Dancing Script', cursive; 
+  font-family: "Dancing Script", cursive;
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Adjusted to align content at the top */
@@ -453,7 +454,7 @@ a:hover {
 }
 
 .poem-title {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   position: absolute;
   top: 15%;
   left: 20%;
@@ -462,7 +463,7 @@ a:hover {
 }
 
 .main-poem {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 1.2rem;
   padding-left: 104px;
   padding-right: 100px;
@@ -664,7 +665,7 @@ hr {
   align-items: center;
   width: 100%;
   height: 100vh;
-  color: #2B3B37;
+  color: #2b3b37;
 }
 .header {
   display: flex;
@@ -674,13 +675,13 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .header span div {
   width: 50px;
   height: 50px;
-  background-color: #691D12;
+  background-color: #691d12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -692,7 +693,7 @@ hr {
   width: 75%;
 }
 .question-header {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -718,7 +719,6 @@ hr {
   left: 42%;
   position: relative;
   color: #f7ede2;
-
 }
 .question-1 span {
   grid-column: 2;
@@ -731,8 +731,7 @@ hr {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 150vh;
-  
+  height: 160vh;
 }
 .prog-1 {
   width: 60%;
@@ -784,10 +783,22 @@ hr {
   box-shadow: -1px 4px 14px 6px #343434;
   border-radius: 20px;
   position: relative;
-  left: 56%;
+  left: 46%;
   top: 10%;
   overflow-y: scroll;
   margin-bottom: 3rem;
+}
+.prog-2-win {
+  width: 100%;
+  height: 160vh;
+}
+.prog-2-win span {
+  font-size: 2.5rem;
+  color: #691d12;
+  font-family: "Fira Sans", sans-serif;
+  position: relative;
+  top: 18%;
+  left: 13%;
 }
 .footer-main {
   padding-top: 90px;
@@ -1185,6 +1196,17 @@ a {
   height: auto;
   align-items: center;
 }
+.container-7-heading {
+  width: 100%;
+  height: auto;
+}
+.container-7-heading span {
+  font-size: 2.5rem;
+  color: #691d12;
+  font-family: "Fira Sans", sans-serif;
+  position: relative;
+  left: 13%;
+}
 .latest-card {
   background-color: #fff;
   border-radius: 20px;
@@ -1356,7 +1378,7 @@ a {
     width: 250px;
   }
   .poem-a-day {
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-size: 1.3rem;
     align-items: center;
     display: flex;
@@ -1576,6 +1598,14 @@ a {
   .latest-read-more a {
     font-size: 0.65rem;
   }
+  .prog span {
+    font-size: 2.5rem;
+    color: #691d12;
+    font-family: "Fira Sans", sans-serif;
+    position: relative;
+    top: -33%;
+    left: 10%;
+  }
 
   @media (max-width: 768px) {
     .fixing {
@@ -1598,7 +1628,7 @@ a {
     }
 
     .author-name {
-      font-family: 'Playfair Display', serif;
+      font-family: "Playfair Display", serif;
       display: flex;
       justify-content: end;
       color: #eeeeee;
@@ -1623,7 +1653,7 @@ a {
       display: none;
     }
     .poem-content {
-      font-family: 'Dancing Script', sans-serif;  
+      font-family: "Dancing Script", sans-serif;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -1636,7 +1666,7 @@ a {
       top: 40%;
       left: 11%;
       overflow-y: auto;
-      box-shadow: 2px 1px 20px 2px #63a4ff;
+      box-shadow: 2px 1px 20px 2px #19273a;
     }
 
     .poem-title {
@@ -1794,20 +1824,43 @@ a {
       width: 88%;
       height: 47vh;
     }
+    .prog-2-win span {
+      font-size: 2rem;
+      color: #691d12;
+      font-family: "Fira Sans", sans-serif;
+      position: relative;
+      top: 18%;
+      left: 6%;
+    }
+    .container-7-heading span {
+      font-size: 2rem;
+      color: #691d12;
+      font-family: "Fira Sans", sans-serif;
+      position: relative;
+      left: 13%;
+    }
+    .header span {
+      gap: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 600;
+    }
   }
 }
-.circular-nav{
+.circular-nav {
   width: 36%;
 }
-.cir-blog{
+.cir-blog {
   transform: rotate(-45deg);
 }
-.cir-market{
+.cir-market {
   transform: rotate(-90deg);
 }
-.cir-poem{
+.cir-poem {
   transform: rotate(-135deg);
 }
-.cir-ca{
+.cir-ca {
   transform: rotate(-180deg);
 }

@@ -58,7 +58,7 @@ const features = [
   "Poems",
   "Marketplace",
   "Current Affairs",
-  "Questionair",
+  "Questionnaire",
 ];
 let i = 0;
 
