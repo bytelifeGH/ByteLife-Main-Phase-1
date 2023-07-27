@@ -26,6 +26,10 @@ window.onscroll = () => {
   let currentScrollpos = window.scrollY;
   if (prevScrollpos > currentScrollpos) {
     document.querySelector(".navbar").style.top = "0";
+    for (let i = 0; i < circularNav.length; i++) {
+      circularNav[i].classList.remove("hide-opacity")
+    }
+    toggle.classList.remove("visibility-low");
   } else {
     const condition = dropDownMenu.classList.contains("open");
     if (condition) {
@@ -34,7 +38,14 @@ window.onscroll = () => {
         ? "fa-solid fa-bars"
         : "fa-solid fa-xmark";
     }
+    for (let i = 0; i < circularNav.length; i++) {
+      circularNav[i].classList.add("hide-opacity")
+    }
     document.querySelector(".navbar").style.top = "-60px";
+    if(menu.classList.contains("active2")){
+      menu.classList.remove("active2");
+    }
+    toggle.classList.add("visibility-low");
   }
   prevScrollpos = currentScrollpos;
 };
