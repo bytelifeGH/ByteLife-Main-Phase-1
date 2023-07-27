@@ -170,11 +170,12 @@ a:hover {
   position: fixed;
   list-style: none;
   left: 0;
-  transform-origin: 98px 294px;
+  transform-origin: 92px 285px;
   transition: 0.5s;
+    transition-delay: 0s;
   transition-delay: 0s;
   transition-delay: calc(0.02s * var(--i));
-  transform: rotate(0deg) translateX(0px) translateY(200px);
+  transform: rotate(0deg) translateX(0px) translateY(255px);
   z-index: 9999;
   top: 15%;
 }
@@ -194,12 +195,11 @@ a:hover {
   transition: opacity 0.5s ease, height 0.5s ease, width 0.5s ease;
 }
 .menu.active2 li {
-  transform: rotate(calc(180deg / 4 * var(--i))) translateX(0px)
-    translateY(-80px);
+  transform: rotate(calc(180deg / 4 * var(--i))) translateX(10%) translateY(-20%)
 }
 .menu.active2 li a {
-  height: 177px;
-  width: 177px;
+  height: 150px;
+  width: 150px;
   transition-delay: calc(1s * var(--i));
   transition: height 0.5s ease, width 0.5s ease;
   box-shadow: 3px 2px 6px 0px #353535;
@@ -211,8 +211,8 @@ a:hover {
   translate: -60px 60px;
   translate: -60px 60px;
   background-color: #ff9f1c;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   border-radius: 50%;
   border-radius: 50%;
   display: flex;
@@ -282,25 +282,62 @@ a:hover {
 }
 
 /* ====================================================================== */
+.arrow-animation {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+top: 78%;
+display: flex;
+justify-content: center;
+align-content: center;
+animation: backandforth 1.5s infinite linear;
+}
+.arrow-animation a{
+  width: 15%;
+}
+
+@keyframes backandforth {
+  0% {
+    top: 74.5%;
+  }
+  50% {
+    top: 81%;
+  }
+  100% {
+    top: 74.5%;
+  }
+}
+
+
+.social-media-section{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .socials {
   list-style: none;
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 7%;
+  bottom: 23%;
   right: 40%;
+  background: #27303b;
+  border-radius: 20px;
+  padding: 10px;
 }
 .social {
   list-style: none;
   width: 100px;
   font-size: 4em;
-  color: #2b3b37;
+  color: #fff;
   transition: transform 0.5s;
 }
 
 .social:hover {
-  color: #691d12;
-  filter: drop-shadow(0 0 20px #691d12) drop-shadow(0 0 80px #691d12);
+  color: #fff;
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 80px #fff);
   transform: translateY(-10px);
 }
 
@@ -529,8 +566,8 @@ a:hover {
 }
 
 .social:hover {
-  color: #691d12;
-  filter: drop-shadow(0 0 20px #bd2d2d) drop-shadow(0 0 80px #bd2d2d);
+  color: #fff;
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 80px #fff);
   transform: translateY(-10px);
 }
 /* ============================================================= */
@@ -1369,14 +1406,14 @@ left: 0; */
     
   }
   .menu li {
-    transform-origin: 71px 254px;
-  }
-  .toggle {
-    left: 0;
-    bottom: 50%;
-    height: 180px;
-    width: 180px;
-  }
+    transform-origin: 79px 238px;
+    }
+    .toggle {
+      left: 0;
+      bottom: 44%;
+      height: 190px;
+      width: 190px;
+    }
   .socials {
     right: 30%;
   }
@@ -1530,6 +1567,10 @@ left: 0; */
   .poem-a-day {
     font-size: 0.8rem;
   }
+  .arrow-animation a{
+    width: 18%;
+  }
+  
 }
 
 @media only screen and (max-width: 992px) {
@@ -1590,9 +1631,11 @@ left: 0; */
     font-size: 2.8rem;
   }
   .socials {
-    bottom: 20%;
-    right: 46%;
+    position: absolute;
+    bottom: 31%;
+    right: 23%;
     margin-left: 17px;
+    
   }
   .social {
     font-size: 3em;
@@ -1647,6 +1690,9 @@ left: 0; */
   }
   .swiper {
     width: 100%;
+  }
+  .arrow-animation a{
+    width: 23%;
   }
 
   @media (max-width: 768px) {
@@ -1794,9 +1840,10 @@ left: 0; */
       padding-left: 30px;
     }
     .socials {
-      bottom: 20%;
-      right: 27%;
+      bottom: 30%;
+      right: 13%;
       margin-left: 17px;
+      position: absolute;
     }
     .sloganFirst {
       font-size: 1.3rem;
@@ -1961,10 +2008,18 @@ left: 0; */
       display: flex;
       flex-direction: row;
       position: relative;
-      width: 100%;
+      width: 77%;
       padding-left: 0px;
-      margin-top: 25rem;
+      margin-top: 19rem;
       margin-right: 3rem;
+    }
+    .icon-inner, .ionicon, svg {
+      display: block;
+      height: 88%;
+      width: 88%;
+    }
+    .arrow-animation a {
+      width: 50%;
     }
   }
 }
