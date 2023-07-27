@@ -495,7 +495,8 @@ a:hover {
   width: 200px;
   height: 60px;
   position: absolute;
-  top: 73%;  left: 7%;
+  top: 73%;
+  left: 7%;
   margin-top: 2.5rem;
 }
 .socials-poet {
@@ -1264,77 +1265,80 @@ a {
   font-size: 1rem;
   margin: 1rem;
 }
+/* width: 67%;
+height: 30vh;
+position: relative;
+left: 0; */
 .market-header-1 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-43-32.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-2 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-44-36.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-3 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-44-59.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 0%;
+  left: 0;
 }
 .market-header-4 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-45-33.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 0%;
+  left: 0;
 }
 .market-header-5 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-45-58.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-6 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-46-17.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-7 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-47-01.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 5%;
+  left: 0;
 }
 .card-mobile-only {
   display: none;
 }
 .swiper {
-
   height: 85%;
 }
-.latest-name{
+.latest-name {
   color: #fff;
 }
 @media only screen and (max-width: 1400px) {
@@ -1512,11 +1516,11 @@ a {
   .social {
     font-size: 3em;
   }
-  .swiper{
+  .swiper {
     width: 100%;
   }
-  .poem-a-day{
-    font-size: .8rem;
+  .poem-a-day {
+    font-size: 0.8rem;
   }
 }
 
@@ -1589,7 +1593,6 @@ a {
     width: 90px;
     height: 47px;
     left: 38%;
-
   }
   .socials-poet {
     position: absolute;
@@ -1634,7 +1637,7 @@ a {
     top: -33%;
     left: 10%;
   }
-  .swiper{
+  .swiper {
     width: 100%;
   }
 
@@ -1932,9 +1935,9 @@ a {
       top: 19%;
       left: 30%;
     }
-    .author-name{
+    .author-name {
       display: flex;
-justify-content: center;
+      justify-content: center;
     }
     .container3-latest-poem {
       width: 100%;
@@ -1944,6 +1947,16 @@ justify-content: center;
       width: 100%;
       height: 80vh;
       background-color: #343434;
+    }
+    .socials {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+      padding-left: 0px;
+      margin-top: 25rem;
+      margin-right: 3rem;
     }
   }
 }
