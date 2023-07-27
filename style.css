@@ -16,6 +16,12 @@ body {
 .hide {
   display: none !important;
 }
+.hide-opacity{
+  opacity: 0 !important;
+}
+.visibility-low{
+  opacity: 0.6 !important;
+}
 
 li {
   list-style-type: none;
@@ -182,16 +188,16 @@ a:hover {
   height: 80px;
   width: 80px;
   transform: 1.25s;
+
   transition-delay: calc(1s * var(--i));
 
-  transition: height 0.5s ease, width 0.5s ease;
+  transition: opacity 0.5s ease, height 0.5s ease, width 0.5s ease;
 }
 .menu.active2 li {
   transform: rotate(calc(180deg / 4 * var(--i))) translateX(0px)
     translateY(-80px);
 }
 .menu.active2 li a {
-  /* 250 250 */
   height: 177px;
   width: 177px;
   transition-delay: calc(1s * var(--i));
@@ -216,7 +222,8 @@ a:hover {
   cursor: pointer;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.6);
   font-size: 2em;
-  transition: transform 1.25s;
+  opacity: 1;
+  transition: opacity 0.1s ease,transform 1.25s;
 }
 .circular-list {
   transition: transform 1s;
@@ -292,8 +299,8 @@ a:hover {
 }
 
 .social:hover {
-  color: #2ec4b6;
-  filter: drop-shadow(0 0 20px #bd2d2d) drop-shadow(0 0 80px #bd2d2d);
+  color: #691d12;
+  filter: drop-shadow(0 0 20px #691d12) drop-shadow(0 0 80px #691d12);
   transform: translateY(-10px);
 }
 
@@ -495,7 +502,8 @@ a:hover {
   width: 200px;
   height: 60px;
   position: absolute;
-  top: 73%;  left: 7%;
+  top: 73%;
+  left: 7%;
   margin-top: 2.5rem;
 }
 .socials-poet {
@@ -521,7 +529,7 @@ a:hover {
 }
 
 .social:hover {
-  color: #fff;
+  color: #691d12;
   filter: drop-shadow(0 0 20px #bd2d2d) drop-shadow(0 0 80px #bd2d2d);
   transform: translateY(-10px);
 }
@@ -1264,77 +1272,80 @@ a {
   font-size: 1rem;
   margin: 1rem;
 }
+/* width: 67%;
+height: 30vh;
+position: relative;
+left: 0; */
 .market-header-1 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-43-32.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-2 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-44-36.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-3 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-44-59.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 0%;
+  left: 0;
 }
 .market-header-4 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-45-33.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 0%;
+  left: 0;
 }
 .market-header-5 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-45-58.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-6 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-46-17.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 18%;
+  left: 0;
 }
 .market-header-7 {
   background-image: url(./amazon/Screenshot\ from\ 2023-07-26\ 16-47-01.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 67%;
   height: 30vh;
   position: relative;
-  left: 5%;
+  left: 0;
 }
 .card-mobile-only {
   display: none;
 }
 .swiper {
-
   height: 85%;
 }
-.latest-name{
+.latest-name {
   color: #fff;
 }
 @media only screen and (max-width: 1400px) {
@@ -1355,6 +1366,7 @@ a {
   .menu.active2 li a {
     height: 140px;
     width: 140px;
+    
   }
   .menu li {
     transform-origin: 71px 254px;
@@ -1512,11 +1524,11 @@ a {
   .social {
     font-size: 3em;
   }
-  .swiper{
+  .swiper {
     width: 100%;
   }
-  .poem-a-day{
-    font-size: .8rem;
+  .poem-a-day {
+    font-size: 0.8rem;
   }
 }
 
@@ -1589,7 +1601,6 @@ a {
     width: 90px;
     height: 47px;
     left: 38%;
-
   }
   .socials-poet {
     position: absolute;
@@ -1634,7 +1645,7 @@ a {
     top: -33%;
     left: 10%;
   }
-  .swiper{
+  .swiper {
     width: 100%;
   }
 
@@ -1932,9 +1943,9 @@ a {
       top: 19%;
       left: 30%;
     }
-    .author-name{
+    .author-name {
       display: flex;
-justify-content: center;
+      justify-content: center;
     }
     .container3-latest-poem {
       width: 100%;
@@ -1944,6 +1955,16 @@ justify-content: center;
       width: 100%;
       height: 80vh;
       background-color: #343434;
+    }
+    .socials {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: 100%;
+      padding-left: 0px;
+      margin-top: 25rem;
+      margin-right: 3rem;
     }
   }
 }
