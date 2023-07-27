@@ -292,8 +292,8 @@ a:hover {
 }
 
 .social:hover {
-  color: #2ec4b6;
-  filter: drop-shadow(0 0 20px #bd2d2d) drop-shadow(0 0 80px #bd2d2d);
+  color: #691d12;
+  filter: drop-shadow(0 0 20px #691d12) drop-shadow(0 0 80px #691d12);
   transform: translateY(-10px);
 }
 
@@ -522,7 +522,7 @@ a:hover {
 }
 
 .social:hover {
-  color: #fff;
+  color: #691d12;
   filter: drop-shadow(0 0 20px #bd2d2d) drop-shadow(0 0 80px #bd2d2d);
   transform: translateY(-10px);
 }
