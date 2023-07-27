@@ -67,7 +67,7 @@ window.onload = () => {
 const features = [
   "Blogs",
   "Poems",
-  "Marketplace",
+  "College deals",
   "Current Affairs",
   "Questionnaire",
 ];
