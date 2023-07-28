@@ -50,6 +50,15 @@ window.onscroll = () => {
   prevScrollpos = currentScrollpos;
 };
 
+// =====================================================
+toggle.addEventListener('mouseover', ()=>{
+  toggle.classList.remove("visibility-low");
+  for (let i = 0; i < circularNav.length; i++) {
+    circularNav[i].classList.remove("hide-opacity")
+  }
+})
+
+
 toggle.addEventListener("click", () => {
   menu.classList.toggle("active2");
 });
