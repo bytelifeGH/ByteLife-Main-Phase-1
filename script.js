@@ -57,6 +57,13 @@ toggle.addEventListener('mouseover', ()=>{
     circularNav[i].classList.remove("hide-opacity")
   }
 })
+// ===================FOR TOUCHSCREEN APPLICAITONS============================
+toggle.addEventListener('touchstart', ()=>{
+  toggle.classList.remove("visibility-low");
+  for (let i = 0; i < circularNav.length; i++) {
+    circularNav[i].classList.remove("hide-opacity")
+  }
+})
 
 
 toggle.addEventListener("click", () => {
