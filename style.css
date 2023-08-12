@@ -691,7 +691,18 @@ img {
   text-decoration: none;
   color: #353535;
 }
-.read-more-btn {
+.read-more-btn-latest{
+  border: none;
+  border-radius: 20px;
+  background-color: #56ccf2;
+  width: 100px;
+  height: 40px;
+  position: relative;
+  left: 0%;
+  color: #353535;
+  font-size: 0.5rem;
+}
+.read-more-btn{
   border: none;
   border-radius: 20px;
   background-color: #56ccf2;
@@ -700,7 +711,9 @@ img {
   position: relative;
   left: 4%;
 }
-
+.blog-5{
+  color: #19273a;
+}
 .user {
   display: flex;
   gap: 0.5rem;
