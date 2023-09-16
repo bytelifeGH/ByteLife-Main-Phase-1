@@ -628,10 +628,14 @@ animation: backandforth 1.5s infinite linear;
   margin-top: 10rem;
 }
 
-img {
+li img {
   max-width: 100%;
+  width: 3em;
   display: block;
   object-fit: cover;
+}
+img{
+  width: 20em;
 }
 
 .card {
