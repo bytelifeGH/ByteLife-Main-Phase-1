@@ -12,6 +12,11 @@ body {
   font-family: "Fira Sans", sans-serif;
   overflow-x: hidden;
 }
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 
 .hide {
   display: none !important;
@@ -308,14 +313,14 @@ animation: backandforth 1.5s infinite linear;
 
 
 .social-media-section{
-  width: 1rem;
-  height: 10%;
+  width: 100%;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 46%;
-  top: 45%;
+  /* right: 46%; */
+  top: 50vh;
 }
 .socials {
   list-style: none;
@@ -326,6 +331,7 @@ animation: backandforth 1.5s infinite linear;
   -webkit-backdrop-filter: blur(10px);
   /* box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.18); */
   border-radius: 20px;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -1432,9 +1438,9 @@ left: 0; */
       height: 190px;
       width: 190px;
     }
-  .socials {
+  /* .socials {
     right: 30%;
-  }
+  } */
   .social {
     font-size: 3.5em;
   }
@@ -1573,9 +1579,9 @@ left: 0; */
     top: 20%;
     right: 4%;
   }
-  .socials {
+  /* .socials {
     right: 24%;
-  }
+  } */
   .social {
     font-size: 3em;
   }
@@ -1648,13 +1654,13 @@ left: 0; */
   .slogan-start {
     font-size: 2.8rem;
   }
-  .socials {
+  /* .socials {
     position: absolute;
     bottom: 31%;
     right: 23%;
     margin-left: 17px;
     
-  }
+  } */
   .social {
     font-size: 3em;
   }
@@ -1858,10 +1864,11 @@ left: 0; */
       padding-left: 30px;
     }
     .socials {
-      bottom: 30%;
-      right: 13%;
-      margin-left: 17px;
-      position: absolute;
+      /* top: 10vmin; */
+      height: 10vmin;
+      /* right: 13%;
+      margin-left: 17px; */
+      /* position: absolute; */
     }
     .sloganFirst {
       font-size: 1.3rem;
@@ -1903,6 +1910,11 @@ left: 0; */
       transform: translateX(-55%);
     }
   }
+  @media only screen and (max-width: 610px){
+    .socials {
+      position: relative;
+      top: 12vmin;
+  } 
   @media only screen and (max-width: 576px) {
     .container-questionair {
       height: 115vh;
@@ -1919,9 +1931,7 @@ left: 0; */
       font-size: 2rem;
     }
     .socials {
-      bottom: 20%;
-      right: -3%;
-      margin-left: 17px;
+      height: 15vmin;
     }
     .social {
       font-size: 40px;
@@ -2022,9 +2032,9 @@ left: 0; */
       background-color: #343434;
     }
     .social{
-      width: 85px;
+      width: 20vw;
     }
-    .socials {
+    /* .socials {
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -2034,7 +2044,7 @@ left: 0; */
       margin-right: 3rem;
       justify-content: center;
       align-content: center;
-    }
+    } */
     .icon-inner, .ionicon, svg {
       display: block;
       height: 88%;
