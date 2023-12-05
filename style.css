@@ -212,7 +212,7 @@ a:hover {
   left: 0;
   bottom: 50%;
   translate: -60px 60px;
-  translate: -60px 60px;
+  translate: -60px 50%;
   background-color: #ff9f1c;
   height: 190px;
   width: 190px;
