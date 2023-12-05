@@ -316,12 +316,12 @@ animation: backandforth 1.5s infinite linear;
   width: 100%;
 /*   height: 10vh; */
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   position: absolute;
   /* right: 46%; */
   top: 50%;
-  transform: translate(-50%);
+  transform: translateY(-50%);
 }
 .socials {
   list-style: none;
